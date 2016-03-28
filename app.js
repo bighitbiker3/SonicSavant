@@ -8,7 +8,7 @@ var moment = require('moment-timezone');
 var CronJob = require('cron').CronJob;
 var SavantJS = require('./savantjs')
 
-var job = new CronJob('00 42 17 * * 0-6', function() {SavantJS.getSavantsArray();}, null, true, 'America/Los_Angeles');
+var job = new CronJob('00 57 10  * * 0-6', function() {SavantJS.getSavantsArray();}, null, true, 'America/Los_Angeles');
 
 var routes = require('./routes/index');
 
